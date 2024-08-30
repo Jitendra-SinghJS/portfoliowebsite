@@ -479,7 +479,7 @@ function ajax(method, url, data, success, error) {
 		outline: 1px solid #005290;
 	}
 </style>
-<!--
+
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
@@ -531,27 +531,8 @@ function ajax(method, url, data, success, error) {
 	} else {
 		initESW('https://service.force.com');
 	}
-</script>  -->
+</script>  
 
-<script type='text/javascript'>
-	function initEmbeddedMessaging() {
-		try {
-			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-
-			embeddedservice_bootstrap.init(
-				'00D2a0000000Z2A',
-				'Cosmo_Bot',
-				'https://sallybeautyholdings--full.sandbox.my.site.com/ESWCosmoBot1721111445600',
-				{
-					scrt2URL: 'https://sallybeautyholdings--full.sandbox.my.salesforce-scrt.com'
-				}
-			);
-		} catch (err) {
-			console.error('Error loading Embedded Messaging: ', err);
-		}
-	};
-</script>
-<script type='text/javascript' src='https://sallybeautyholdings--full.sandbox.my.site.com/ESWCosmoBot1721111445600/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
             
   </body>
