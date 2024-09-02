@@ -470,7 +470,13 @@ function ajax(method, url, data, success, error) {
     </div>
     <script src="./app.js"></script>
     <script src="./autotyping.js"></script>
-           
+    <script>
+    app.use((req, res, next) => {
+      res.header("Access-Control-Allow-Origin", "https://jitendra-singhjs.github.io");
+      res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+      next();
+    });
+  </script> 
     <script type='text/javascript'>
       function initEmbeddedMessaging() {
         try {
